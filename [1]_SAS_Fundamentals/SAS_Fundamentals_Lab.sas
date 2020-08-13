@@ -59,7 +59,7 @@ run;
 * read in slimmingclub data using list format;
 data slimmingclub;
   * modifiy path to match your files;
-  infile '/folders/myfolders/STAT448 Final/Data/HW1/SlimmingClub.dat';
+  infile '';
   input idno team $ startweight weightnow;
 run;
 /* view data with proc print */
@@ -69,7 +69,7 @@ run;
 * read in slimmingclub2 data using column format;
 data slimmingclub2;
   * modifiy path to match your files;
-  infile '/folders/myfolders/STAT448 Final/Data/HW1/SlimmingClub2.dat';
+  infile '';
   input name $ 1-18 team $ 20-25 startweight 27-29 weightnow 31-33;
 run;
 /* view data */
@@ -82,7 +82,7 @@ run;
    while the previous comments used the asterisk-semicolon syntax */
 data slimmingclub3;
   * modifiy path to match your files;
-  infile '/folders/myfolders/STAT448 Final/Data/HW1/WATER.DAT';
+  infile '';
   input name $19. team $7. startweight 4. weightnow 3.;
 run;
 /* view the data */
