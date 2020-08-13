@@ -1,20 +1,17 @@
-/* Stat 448 Lab 1 Solutions-Week 1: Chapter 1 */
-
-/* Set-ups */
-/* Include the ods statements to close all html files and create
+/* REMINDER: Include the ods statements to close all html files and create
 a new html file*/
 /* Comments:
   At the beginning, you can use “ods html close” to close all the existing html files, so that
   the upcoming results would be written into a new, editable file.
   When creating the new file, you’ll need to specify the path.
-  At the end of your codes, it’s also advisable to add “ods html close” to ensure that the file
+  At the end of your codes, it’s also advisable to add “ods rtf close” to ensure that the file
   you generated is editable. 
 */
 
 ods html close; 
 ods preferences;
-/* You need to modify the path for your files */
-ods rtf file='/folders/myfolders/Stat 448 SAS codes/Week_1/Chapter1LabSolutions.rtf';
+/* You need to modify the path for where you want the output files*/
+ods rtf file='';
 
 
 /* Data Generation*/
@@ -62,7 +59,7 @@ run;
 * read in slimmingclub data using list format;
 data slimmingclub;
   * modifiy path to match your files;
-  infile '/folders/myfolders/Stat 448 Data/Week_1_data/slimmingclub.dat';
+  infile '/folders/myfolders/STAT448 Final/Data/HW1/SlimmingClub.dat';
   input idno team $ startweight weightnow;
 run;
 /* view data with proc print */
@@ -72,7 +69,7 @@ run;
 * read in slimmingclub2 data using column format;
 data slimmingclub2;
   * modifiy path to match your files;
-  infile '/folders/myfolders/Stat 448 Data/Week_1_data/slimmingclub2.dat';
+  infile '/folders/myfolders/STAT448 Final/Data/HW1/SlimmingClub2.dat';
   input name $ 1-18 team $ 20-25 startweight 27-29 weightnow 31-33;
 run;
 /* view data */
@@ -85,7 +82,7 @@ run;
    while the previous comments used the asterisk-semicolon syntax */
 data slimmingclub3;
   * modifiy path to match your files;
-  infile '/folders/myfolders/Stat 448 Data/Week_1_data/slimmingclub.dat';
+  infile '/folders/myfolders/STAT448 Final/Data/HW1/WATER.DAT';
   input name $19. team $7. startweight 4. weightnow 3.;
 run;
 /* view the data */

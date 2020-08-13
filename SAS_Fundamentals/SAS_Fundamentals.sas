@@ -2,8 +2,8 @@
 * ods preferences;
 * ods html newfile=proc;
 ods rtf file='/folders/myfolders/Stat 448 SAS codes/Week_1/resultsweek1.rtf'; 
-/* you will need to modify file paths to point to your data files 
-  and write the rtf file to the appropriate place */
+/* The output path to the rtf file that is produced containing the outputs of the code */
+
 * define data set from raw data;
 data bodyfat;
  input age pctfat sex $;
@@ -30,17 +30,17 @@ cards;
 * view data via proc print;
 proc print data=bodyfat;
 run;
-* read in slimmingclub data using list format;
+* read in slimming club data using the input file path below;
 data slimmingclub;
-  infile '/folders/myfolders/Stat 448 Data/Week_1_data/slimmingclub.dat';
+  infile '';
   input idno team $ startweight weightnow;
 run;
 * view data;
 proc print data=slimmingclub;
 run;
-* read in slimmingclub2 data using column format;
+* read in slimmingclub2 data using input file path below. Notice that it is uploading data in column format;
 data slimmingclub2;
-  infile '/folders/myfolders/Stat 448 Data/Week_1_data/slimmingclub2.dat';
+  infile '';
   input name $ 1-18 team $ 20-25 startweight 27-29 weightnow 31-33;
 run;
 * view data;
