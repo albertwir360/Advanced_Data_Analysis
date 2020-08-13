@@ -8,4 +8,20 @@ This repository will contain work pertaining to the usage of SAS programming lan
 | ------------- |
 | 1. SAS Fundamentals      | 
 | 2. Descriptive Statistics and Inference | 
+| 3. Inference and Categorical Data | 
+| 4. Analysis Of Variance Pt. 1 |
+| 5. Analysis of Variance Pt. 2 |  
+| 6. Simple Linear Regression |  
+| 7. Multiple Linear Regression |  
+| 8. Logistic Regression |  
+| 9. Generalized Linear Model |  
+| 10. Principal Component Analysis |  
+| 11. Cluster Analysis|  
+| 12. Discriminant Analysis |  
+| A. Applied Assignments |  
+
+
+
+
+
 
